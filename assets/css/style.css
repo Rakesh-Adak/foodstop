@@ -532,6 +532,19 @@ header .icons #menu-bars {
   opacity: 0;
 }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--black);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -550,6 +563,7 @@ header .icons #menu-bars {
     display: inline-block;
   }
   header .navbar {
+    background: #ffffff;
     position: absolute;
     top: 100%;
     left: 0;
@@ -582,6 +596,21 @@ header .icons #menu-bars {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  header {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  header .logo img {
+    width: 80px;
+  }
+  header .navbar {
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 2rem;
   }
 
   .dishes .box-container .box img {

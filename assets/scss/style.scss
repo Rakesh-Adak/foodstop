@@ -569,6 +569,20 @@ header {
   }
 }
 
+// Scroll Bar
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 1rem;
+  &:hover{
+    background: var(--black);
+  }
+}
+
 // Responsive Design
 @media (max-width: 991px) {
   html {
@@ -592,6 +606,7 @@ header {
       }
     }
     .navbar {
+      background: #ffffff;
       position: absolute;
       top: 100%;
       left: 0;
@@ -637,6 +652,23 @@ header {
   html {
     font-size: 50%;
   }
+
+header{
+  padding: 1rem 2rem 1rem 1rem;
+  .logo{
+    img{
+      width: 80px;
+    }
+  }
+  .navbar{
+    background: #ffffff;
+    text-align: center;
+  }
+}
+
+.btn{
+  font-size: 2rem;
+}
 
   .dishes {
     .box-container {
